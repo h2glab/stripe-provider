@@ -13,7 +13,7 @@
 public struct StripeList<Model>: StripeModel where Model: StripeModel {
     public var object: String
     public var hasMore: Bool
-    public var totalCount: Int
+    public var totalCount: Int?
     public var url: String
     public var data: [Model]
     

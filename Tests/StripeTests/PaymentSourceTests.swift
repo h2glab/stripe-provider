@@ -13,7 +13,6 @@ class PaymentSourceTests: XCTestCase {
     let sourceListString = """
 {
   "object": "list",
-  "total_count": 3,
   "data": [
     {
       "id": "card_1Cs8z3GaLcnLeFWiU9SDCez8",
