@@ -12,18 +12,4 @@ import Foundation
  https://stripe.com/docs/api/curl#list_transfers
  */
 
-public struct TransferList: StripeModel {
-    public var object: String
-    public var hasMore: Bool
-    public var totalCount: Int
-    public var url: String
-    public var data: [StripeTransfer]
-    
-    public enum CodingKeys: String, CodingKey {
-        case object
-        case hasMore = "has_more"
-        case totalCount = "total_count"
-        case url
-        case data
-    }
-}
+public typealias TransferList = StripeList<StripeTransfer>
