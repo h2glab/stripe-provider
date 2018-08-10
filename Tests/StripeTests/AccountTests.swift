@@ -238,10 +238,10 @@ class AccountTests: XCTestCase {
                 XCTAssertEqual(account.externalAccounts?.hasMore, false)
                 XCTAssertEqual(account.externalAccounts?.totalCount, 2)
                 XCTAssertEqual(account.externalAccounts?.url, "/v1/accounts/acct_1032D82eZvKYlo2C/external_accounts")
-                XCTAssertEqual(account.externalAccounts?.cardAccounts?.count, 1)
-                XCTAssertEqual(account.externalAccounts?.bankAccounts?.count, 1)
-                XCTAssertEqual(account.externalAccounts?.cardAccounts?[0].id, "card_1BoJ2IKrZ43eBVAbSXsWRMXT")
-                XCTAssertEqual(account.externalAccounts?.bankAccounts?[0].id, "ba_1BnxhQ2eZvKYlo2C5cM6hYK1")
+                XCTAssertEqual(account.externalAccounts?.cards.count, 1)
+                XCTAssertEqual(account.externalAccounts?.bankAccounts.count, 1)
+                XCTAssertEqual(account.externalAccounts?.cards[0].id, "card_1BoJ2IKrZ43eBVAbSXsWRMXT")
+                XCTAssertEqual(account.externalAccounts?.bankAccounts[0].id, "ba_1BnxhQ2eZvKYlo2C5cM6hYK1")
                 
                 // LegalEntity
                 XCTAssertEqual(account.legalEntity?.address?.country, "US")
